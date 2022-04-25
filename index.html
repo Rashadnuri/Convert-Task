@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./images/currency-converter.webp" type="image/x-icon">
+    <title>Currency Convertor</title> 
+</head> 
+
+<body>
+
+    <div class="container-fluid m-0 p-0"> 
+        <div class="nav px-0 pt-3">
+            <div class="logo-con">
+                <img src="./images/bankLogo.png" alt="">
+            </div>
+
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a href="">BANK</a></li>
+                <li class="breadcrumb-item"><a href="">BUSINESS</a></li>
+                <li class="breadcrumb-item"><a href="">INVESTMENT</a></li>
+                <li class="breadcrumb-item"><a href="">INSURANCE</a></li>
+                <li class="breadcrumb-item"><a href="">MOBILE</a></li>
+                <li class="breadcrumb-item"><a href="">TRIPS</a></li>
+                <li class="breadcrumb-item"><a href="">ENTERTAINMENT</a></li>
+            </ul>
+
+            <div class="sign-in">
+                <button class="btn-sign">SIGN IN</button>
+            </div>
+
+        </div>
+
+        <div class="content">
+            <h1 class="header">
+                Currency converter online
+            </h1>
+
+            <form action="" id="myForm">
+                <div class="converter-con mt-5 `">
+                    <div class="from">
+                        <p class="from-header">
+                            I have
+                        </p>
+    
+
+                        <div class="btn-group to col-11" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="btnbase" id="btnradio1" autocomplete="off" value="RUB"  checked>
+                            <label class="btn" for="btnradio1">RUB</label>
+
+                            <input type="radio" class="btn-check" name="btnbase" id="btnradio2" autocomplete="off" value="USD" >
+                            <label class="btn" for="btnradio2">USD</label>
+
+                            <input type="radio" class="btn-check" name="btnbase" id="btnradio3" autocomplete="off" value="EUR" >
+                            <label class="btn" for="btnradio3">EUR</label>
+
+                            <input type="radio" class="btn-check" name="btnbase" id="btnradio4" autocomplete="off" value="GBP" >
+                            <label class="btn" for="btnradio4">GBP</label>
+                        </div>
+
+                        <div class="enterAmount col-12 pt-3 mt-4 ps-3">
+                            <input type="text" name="baseInput" id="baseInput" class="col-12 inputAmount" autocomplete="off" value="1">
+                            <p class="currentCurrency mt-5" id="baseCurrency">
+                                <!-- 1 RUB = 0.0135 USD -->
+                            </p>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="from">
+                        <p class="from-header">
+                            I want to change
+                        </p>
+
+
+                        <div class="btn-group to col-11" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="btnTo" id="btnradioTo1" autocomplete="off" value="RUB">
+                            <label class="btn " for="btnradioTo1">RUB</label>
+
+                            <input type="radio" class="btn-check" name="btnTo" id="btnradioTo2" autocomplete="off" value="USD" checked>
+                            <label class="btn" for="btnradioTo2">USD</label>
+
+                            <input type="radio" class="btn-check" name="btnTo" id="btnradioTo3" autocomplete="off" value="EUR">
+                            <label class="btn" for="btnradioTo3">EUR</label>
+
+                            <input type="radio" class="btn-check" name="btnTo" id="btnradioTo4" autocomplete="off" value="GBP">
+                            <label class="btn" for="btnradioTo4">GBP</label>
+                        </div>
+
+                        <div class="enterAmount col-12 pt-3 mt-4 ps-4">
+                            <input type="text" name="toInput" id="toInput" autocomplete="off" class="col-12 inputAmount" >
+                            <p class="currentCurrency mt-5" id="toCurrency">
+                                <!-- 1 USD = 73.8896 RUB -->
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
