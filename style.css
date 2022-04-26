@@ -26,7 +26,10 @@ body {
 
 .breadcrumb-item {
     margin-right: 3%;
+    font-weight: 500;
+    margin-top: 1%;
 }
+    
 
 .breadcrumb-item a {
     color: #959BA4;
@@ -37,7 +40,7 @@ body {
 .sign-in {
     padding: 0;
     margin-top: -0.5%;
-    margin-left: 5%;
+    margin-left: 74%;
 }
 
 .btn-sign {
@@ -46,6 +49,7 @@ body {
     border-radius: 5px;
     font-weight: 500;
     height: 60%;
+    margin-top: 15%;
 }
 
 .header {
@@ -68,6 +72,7 @@ body {
 
 .currentCurrency {
     color: #C6C6C6;
+    font-weight: 500;
 }
 
 
@@ -81,6 +86,7 @@ body {
 .from-header {
     color: #9F9F9F;
     font-size: 17px;
+    font-weight: 500;
 }
 
 .from {
@@ -113,7 +119,7 @@ input[type="radio"]+label:hover {
 
 input[type="radio"]:checked+label {
     color: #fff;
-    background-color: #833AE0;
+    background-color: #0400ff;
     box-shadow: none !important;
 }
 
@@ -146,6 +152,7 @@ input[type="radio"]:checked+label {
     .header {
         width: 50%;
         margin-left: 23%;
+        font-size: 45px;
     }
 
     .converter-con {
@@ -478,7 +485,7 @@ input[type="radio"]:checked+label {
     .header {
         font-size: 16px;
         width: 70%;
-        margin-top: 82%;
+        margin-top: 90%;
         margin-left: 12%;
         margin-bottom: -5%;
         text-align: center;
